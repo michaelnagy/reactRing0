@@ -1,10 +1,14 @@
 import React, { Component } from 'react';
-import Header from './Components/Header/Header';
+import MainMenu from './Components/MainMenu/MainMenu';
+import Headline from './Components/Headline/Headline';
 
 class App extends Component {
   render() {
     return (
-        <Header/>
+      <div>
+        <MainMenu/>
+        <Headline/>
+      </div>
     );
   }
 }

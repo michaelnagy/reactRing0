@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { Menu } from 'semantic-ui-react'
-import './Header.css';
+import './MainMenu.css';
 
-export default class Header extends Component {
+export default class MainMenu extends Component {
   constructor() {
     super()
     this.state = {activeItem : 'home'};
@@ -15,7 +15,7 @@ export default class Header extends Component {
 
     return (
       <div className="Header">
-        <Menu>
+        <Menu borderless stackable widths={4} fluid fixed={'top'} color={'orange'}>
         <Menu.Item
           name='home'
           active={activeItem === 'home'}
