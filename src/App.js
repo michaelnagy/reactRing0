@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import MainMenu from './Components/MainMenu/MainMenu';
 import Headline from './Components/Headline/Headline';
+import GithubRepo from './Components/GithubRepo/GithubRepo';
 
 class App extends Component {
   render() {
@@ -8,6 +9,7 @@ class App extends Component {
       <div>
         <MainMenu/>
         <Headline/>
+        <GithubRepo/>
       </div>
     );
   }
