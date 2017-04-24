@@ -15,7 +15,8 @@ class GithubRepo extends React.Component {
       forks: 0,
       stargazers_count: 0,
       commits: 0,
-      open_issues: 0
+      open_issues: 0,
+      loading: true
     }
     this.gh = new GitHub({
      username: github.username,
@@ -46,7 +47,8 @@ class GithubRepo extends React.Component {
         forks: repoDetails.forks,
         stargazers_count: repoDetails.stargazers_count,
         commits: repoDetails.commits,
-        open_issues: repoDetails.open_issues
+        open_issues: repoDetails.open_issues,
+        loading: !this.state.loading
       })
       // console.log(this.state);
     }.bind(this))
@@ -59,7 +61,7 @@ class GithubRepo extends React.Component {
 
   render() {
     return (
-      <Segment inverted style={{borderRadius:0}}>
+      <Segment inverted style={{borderRadius:0}} loading={this.state.loading}>
         <Statistic.Group widths={5} >
           <Statistic inverted as='a' href='https://github.com/AsiaGenius/ring-0' target='_blank'>
             <Statistic.Value>
