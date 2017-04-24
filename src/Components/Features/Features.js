@@ -1,17 +1,23 @@
 import React from 'react'
 import { Card, Icon, List, Header, Container } from 'semantic-ui-react'
+import FeatureItems from './FeatureItems'
 import './Features.css'
 
 const Features = () => (
   <Container>
-    <Container fluid={true} textAlign={'center'} style={{marginTop:'5em'}}>
-      <Header as='h1'>Features
-        <Header.Subheader>
-            Manage your settings and preferences.
-        </Header.Subheader>
-      </Header>
-    </Container>
+
     <Container>
+
+      <FeatureItems/>
+
+      <Container fluid={true} textAlign={'center'} style={{marginTop:'5em', marginBottom:'5em'}}>
+        <Header as='h1'>Features
+          <Header.Subheader>
+              Manage your settings and preferences.
+          </Header.Subheader>
+        </Header>
+      </Container>
+
       <Card.Group itemsPerRow={2} style={{margin: '1.5em'}} stackable>
         <Card>
           <Card.Content>
