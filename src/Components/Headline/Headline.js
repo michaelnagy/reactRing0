@@ -8,8 +8,8 @@ const Headline = () => (
         <Header as='h3' textAlign='center'>
           Easy and Efficient protection for Games.
         </Header>
-        <Button inverted color='green'><Icon name='user'/> Login</Button>
-        <Button inverted color='violet'><Icon name='add user'/> Register</Button>
+        <Button inverted color='green' as='a' href='http://ringsec.surge.sh' target='_blank'><Icon name='user'/> Login</Button>
+        <Button inverted color='violet' as='a' href='http://ringsec.surge.sh' target='_blank'><Icon name='add user'/> Register</Button>
       </Grid.Column>
   </Grid>
 )

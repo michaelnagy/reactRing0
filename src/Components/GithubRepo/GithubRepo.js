@@ -1,6 +1,7 @@
 import React from 'react';
 import GitHub from 'github-api';
 import { Segment, Statistic, Icon } from 'semantic-ui-react'
+import './GithubRepo.css';
 import { github } from '../../config';
 
 

@@ -1,0 +1,8 @@
+@media screen and (max-width: 320px) {
+  .ui.segment, .ui.segments .segment {
+    font-size: 0.8em;
+  }
+  .ui.five.statistics .statistic {
+    max-width: 20%;
+  }
+}

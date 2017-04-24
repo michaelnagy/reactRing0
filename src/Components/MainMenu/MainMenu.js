@@ -3,38 +3,32 @@ import { Menu } from 'semantic-ui-react'
 import './MainMenu.css';
 
 export default class MainMenu extends Component {
-  constructor() {
-    super()
-    this.state = {activeItem : 'home'};
-  }
-
-  handleItemClick = (e, { name }) => this.setState({ activeItem: name })
 
   render() {
-    const { activeItem } = this.state
-
     return (
       <div className="Header">
         <Menu borderless stackable widths={4} fluid fixed={'top'} color={'orange'}>
         <Menu.Item
           name='home'
-          active={activeItem === 'home'}
-          onClick={this.handleItemClick}
+          active={true}
         />
         <Menu.Item
+          as='a'
+          href='https://github.com/AsiaGenius/ring-0/tree/master/diffs'
+          target='_blank'
           name='diffs'
-          active={activeItem === 'diffs'}
-          onClick={this.handleItemClick}
         />
         <Menu.Item
-          name='repository'
-          active={activeItem === 'repository'}
-          onClick={this.handleItemClick}
+          name='forum'
+          as='a'
+          href='https://github.com/AsiaGenius/ring-0/tree/master/diffs'
+          target='_blank'
         />
         <Menu.Item
-          name='features'
-          active={activeItem === 'features'}
-          onClick={this.handleItemClick}
+          name='guides'
+          as='a'
+          href='https://github.com/AsiaGenius/ring-0/tree/master/diffs'
+          target='_blank'
         />
       </Menu>
       </div>
