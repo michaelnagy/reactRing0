@@ -33,7 +33,7 @@ class GithubRepo extends React.Component {
       let repoDetails = await repo.getDetails()
       let commitList = await repo.getContributorStats()
       repoDetails.data.commits = commitList.data[0].total
-      console.log(repoDetails.data, commitList.data)
+      // console.log(repoDetails.data, commitList.data)
       return repoDetails.data;
     } catch (e) {
       console.log(e)

@@ -3,7 +3,9 @@ import MainMenu from './Components/MainMenu/MainMenu';
 import Headline from './Components/Headline/Headline';
 import GithubRepo from './Components/GithubRepo/GithubRepo';
 import Features from './Components/Features/Features';
-import { Container, Icon } from 'semantic-ui-react'
+import ConnectionStats from './Components/ConnectionStats/ConnectionStats';
+import { Container, Icon } from 'semantic-ui-react';
+import './App.css';
 
 class App extends Component {
   render() {
@@ -11,6 +13,7 @@ class App extends Component {
       <div>
         <MainMenu/>
         <Headline/>
+        <ConnectionStats/>
         <GithubRepo/>
         <Features/>
         <Container fluid={true} textAlign={'center'} style={{padding:'0.5em', backgroundColor: '#E8E8E8', fontSize:'0.9em', color:'rgba(0,0,0,.4)'}}>
