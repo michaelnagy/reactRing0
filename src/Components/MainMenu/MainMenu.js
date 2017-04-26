@@ -27,7 +27,7 @@ export default class MainMenu extends Component {
         <Menu.Item
           name='guides'
           as='a'
-          href='https://github.com/AsiaGenius/ring-0/tree/master/diffs'
+          href='https://forum.ringsec.net/cm/d/7-knowledge-base'
           target='_blank'
         />
         <Menu.Item
