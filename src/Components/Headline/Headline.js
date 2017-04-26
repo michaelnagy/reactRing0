@@ -8,8 +8,8 @@ const Headline = () => (
           <Header as='h3' textAlign='center' className='animatedcss fadeIn'>
             Easy and Efficient protection for Games.
           </Header>
-          <Button className='animatedcss fadeInUp' size={'large'} inverted color='green' as='a' href='http://ringsec.surge.sh' target='_blank'><Icon name='user'/> Login</Button>
-          <Button className='animatedcss fadeInUp' size={'large'} inverted color='violet' as='a' href='http://ringsec.surge.sh' target='_blank'><Icon name='add user'/> Register</Button>
+          <Button className='animatedcss fadeInUp' size={'large'} inverted color='green' as='a' href='https://ringsec.surge.sh' target='_blank'><Icon name='user'/> Login</Button>
+          <Button className='animatedcss fadeInUp' size={'large'} inverted color='violet' as='a' href='https://ringsec.surge.sh' target='_blank'><Icon name='add user'/> Register</Button>
 
       </Grid.Column>
   </Grid>

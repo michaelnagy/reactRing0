@@ -21,7 +21,7 @@ export default class MainMenu extends Component {
         <Menu.Item
           name='forum'
           as='a'
-          href='http://forum.ringsec.net/cm/'
+          href='https://forum.ringsec.net/cm/'
           target='_blank'
         />
         <Menu.Item
