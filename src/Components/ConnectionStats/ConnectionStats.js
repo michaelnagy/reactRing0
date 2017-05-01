@@ -14,12 +14,12 @@ class ConnectionStats extends Component {
         return response.text()
     })
     .then(function(json) {
-      console.log(JSON.parse(json));
+      // console.log(JSON.parse(json));
       this.setState({ [state]: JSON.parse(json).novo })
-      console.log(this.state);
+      // console.log(this.state);
     }.bind(this))
     .catch(function(err) {
-      console.log(err);
+      // console.log(err);
     });
   }
 

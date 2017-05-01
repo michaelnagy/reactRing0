@@ -14,7 +14,10 @@ class App extends Component {
         <MainMenu/>
         <Headline/>
         <ConnectionStats/>
-        <GithubRepo/>
+        <GithubRepo
+          repoUser='AsiaGenius'
+          repoName='ring-0'
+        />
         <Features/>
         <Container fluid={true} textAlign={'center'} style={{padding:'0.5em', backgroundColor: '#E8E8E8', fontSize:'0.9em', color:'rgba(0,0,0,.4)'}}>
           <p>made with <Icon name='heart' color='pink' size='large'/> by <a style={{color:'#77828e'}} href='https://github.com/michaelnagy' target='_blank'>Michael Nagy</a> </p>

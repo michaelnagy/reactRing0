@@ -29,7 +29,7 @@ class GithubRepo extends React.Component {
 
   getRepo = async () => {
     try {
-      let repo = await this.gh.getRepo('AsiaGenius','ring-0')
+      let repo = await this.gh.getRepo(this.props.repoUser,this.props.repoName)
       let repoDetails = await repo.getDetails()
       let commitList = await repo.getContributorStats()
       repoDetails.data.commits = commitList.data[0].total
